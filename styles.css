@@ -1,0 +1,147 @@
+/* styles.css */
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif; /* Fonte mais limpa e legível */
+    line-height: 1.6;
+    background-color: #f7f9fa; /* Cor de fundo suave */
+    padding: 10px;
+}
+
+header {
+    background: linear-gradient(135deg, #6a11cb, #2575fc); /* Gradiente moderno para o cabeçalho */
+    color: #fff;
+    padding: 10px; /* Aumentado o padding para mais espaço */
+    text-align: center;
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px; /* Espaço abaixo do cabeçalho */
+}
+
+h1 {
+    font-size: 40px; /* Tamanho da fonte do título principal */
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Sombra de texto para destaque */
+}
+
+a {
+    cursor: pointer; /* Mãozinha ao passar sobre os links */
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto; /* Centralizar o conteúdo */
+    padding: 25px;
+    background: #a09f9f; /* Cor de fundo branca para o conteúdo */
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1px;
+}
+
+section {
+    margin-bottom: 20px; /* Aumentado o espaço entre seções */
+    padding: 10px;
+    border: 2px solid #2c51f7; /* Borda suave ao redor das seções */
+    border-radius: 15px; /* Arredondando os cantos das seções */
+    background-color: #f9f9f9; /* Cor de fundo clara para seções */
+    transition: transform 0.3s, box-shadow 0.3s; /* Efeito de transição suave */
+}
+
+section:hover {
+    transform: translateY(-5px); /* Efeito de elevação ao passar o mouse */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    font-size: 30px; /* Tamanho maior para os subtítulos */
+    margin-bottom: 15px;
+    color: #6a11cb; /* Cor para os títulos das seções */
+    border-bottom: 3px solid #2575fc; /* Linha abaixo do título */
+    padding-bottom: 8px; /* Espaçamento abaixo do título */
+}
+
+ol {
+    margin-left: 20px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+li {
+    margin: 8px 0; /* Espaço reduzido entre os itens da lista */
+    padding: 8px; /* Padding reduzido para os itens da lista */
+    border-radius: 10px; /* Arredondando os itens da lista */
+    background-color: #ffffff; /* Cor de fundo branca para os itens */
+    transition: background-color 0.3s, transform 0.3s; /* Transições suaves */
+    font-size: 20px; /* Tamanho da fonte reduzido */
+    color: #050391;
+}
+
+li:hover {
+    background-color: #e0f7fa; /* Cor de fundo ao passar o mouse */
+    transform: scale(1.02); /* Aumenta o tamanho levemente */
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #343a40; /* Cor de fundo do rodapé */
+    color: #fff;
+    border-radius: 15px; /* Bordas arredondadas */
+    margin-top: 20px; /* Espaçamento acima do rodapé */
+}
+
+.message-box {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #25d9f8; /* Cor de fundo suave */
+    border: 1px solid #bee5eb; /* Borda azul clara */
+    border-radius: 10px; /* Bordas arredondadas */
+    color: #0c5460; /* Texto em tom azul escuro */
+    font-size: 1.2rem; /* Tamanho da fonte */
+    display: none; /* Inicialmente oculta */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: opacity 0.3s ease; /* Transição suave para a opacidade */
+}
+
+/* Estilo para mensagem de erro */
+.message-box.error {
+    background-color: #f8d7da; /* Cor de fundo para erro */
+    border-color: #f5c6cb; /* Borda para erro */
+    color: #721c24; /* Texto em tom vermelho escuro */
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2.5rem; /* Tamanho reduzido para telas menores */
+    }
+
+    h2 {
+        font-size: 2rem; /* Tamanho reduzido para telas menores */
+    }
+
+    main {
+        padding: 20px; /* Menos padding em telas menores */
+    }
+}
+
+.welcome-message {
+    position: fixed; /* Fixa a mensagem no topo */
+    top: 20px; /* Distância do topo */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translateX(-50%); /* Ajusta o centro */
+    background-color: #6a11cb; /* Cor de fundo da mensagem */
+    color: #fff; /* Texto branco */
+    padding: 15px 25px; /* Padding */
+    border-radius: 8px; /* Bordas arredondadas */
+    z-index: 1000; /* Coloca a mensagem acima de outros elementos */
+    display: none; /* Inicialmente oculta */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra */
+    transition: opacity 0.5s ease; /* Transição suave */
+}
